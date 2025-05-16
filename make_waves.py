@@ -12,7 +12,8 @@ from simroute import * #   Aquest modul carrega el paramS_PROD
 from netCDF4 import Dataset 
 import scipy.interpolate
 import matplotlib.pyplot as plt
-
+import os
+os.environ['TCL_LIBRARY'] = r'C:\Users\Koniot\AppData\Local\Programs\Python\Python313\tcl\tcl8.6'
 
 # Plot waves after interpolation
 plot_waves = True

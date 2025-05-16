@@ -25,7 +25,7 @@ The aliases was originally deprecated in NumPy 1.20; for more details and guidan
 from params_HV_NAIN import *
 #from params_HAKO_KAGO import *
 #######################3
-import numpy  as np
+import numpy as np
 import math as math
 import re
 import os
