@@ -59,7 +59,7 @@ L_TripFix=dat['arr_5']
 Cost_Opt=dat['arr_6']
 L_ConsCostTrip=dat['arr_7']
 Cost_Min=dat['arr_8']
-ARX=dat['arr_9']
+# ARX=dat['arr_9']
 
 inc=inc/60.0    
 #Re-build Mesh:
