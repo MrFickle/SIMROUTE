@@ -6,12 +6,10 @@ Code part of SIMROUTE (UPC-BarcelonaTech)
 Version: 02 / 03 / 21
 @author: manel grifoll (UPC-BarcelonaTech)
 """
-from simroute import *      #Aquest modul ja carrega el parms_PROD
+from params import LonMin, LonMax, LatMin, LatMax, dx, prod, date_Ini, date_End, name_Simu, dir_arx
 import os
 import datetime
 import copernicusmarine
-
-
 
 # END OF USER INPUTS   #######################
 
@@ -54,18 +52,26 @@ if prod=='BALTIC':
    # ID_DTSET='ARCTIC_MULTIYEAR_WAV_002_013'
 
 ####################
+# Start date as datetime object for validation
 d1 = datetime.date(date_Ini[0],date_Ini[1],date_Ini[2])
+# End date as datetime object for validation
 d2 = datetime.date(date_End[0],date_End[1],date_End[2])
-nomw1=d1.strftime('%Y-%m-%d')
-dt_min= nomw1+'T00:00:00' 
-nomw2=d2.strftime('%Y-%m-%d')
-dt_max= nomw2+'T23:59:59' 
-nomarx='Waves_'+name_Simu+'_'+nomw1+'%'+nomw2+'.nc'
+# Convert date start to string format
+nomw1 = d1.strftime('%Y-%m-%d')
+# Define minimum date
+dt_min = nomw1 + 'T00:00:00'
+# Convert date end to string format
+nomw2 = d2.strftime('%Y-%m-%d')
+# Define maximum date
+dt_max = nomw2 + 'T23:59:59'
+# Define output filename
+nomarx = 'Waves_' + name_Simu + '_' + nomw1 + '%' + nomw2 + '.nc'
 print(dt_min,dt_max)
 print(nomarx)
 
 ####################
 
+# Get dataset from copernicusmarine API
 copernicusmarine.subset(
         dataset_id=ID_DTSET,
         dataset_version=DT_VER,
@@ -81,8 +87,7 @@ copernicusmarine.subset(
         coordinates_selection_method="strict-inside",
         output_filename=nomarx ,
         disable_progress_bar=False,
-        output_directory=dir_arx 
-        
+        output_directory=dir_arx
     )
  
 

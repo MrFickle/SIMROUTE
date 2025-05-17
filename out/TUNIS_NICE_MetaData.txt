@@ -1,0 +1,15 @@
+name_Simu = 'TUNIS_NICE'
+LonMin =  4.320 
+LonMax = 10.500 
+LatMin = 36.800 
+LatMax = 43.300 
+inc =  1.500 
+nodIni = 5211 
+nodEnd = 63879 
+Waves_TUNIS_NICE_2023-01-20%2023-01-22.nc
+time_res = 1 
+t_ini = 9 
+v0 = 16.100 
+WEN_form = 1 
+Lbp = 225 
+DWT = 8000 

@@ -14,6 +14,8 @@ from simroute import *
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
+import os
+os.environ['TCL_LIBRARY'] = r'C:\Users\Koniot\AppData\Local\Programs\Python\Python313\tcl\tcl8.6'
 #from mpl_toolkits.basemap import Basemap
 
 tic()

@@ -47,11 +47,11 @@ v0=16.1  # Cruising speed in nautical milles per hour (in knots)
 
 #Formulation WEN (Wave Effect on Navigation)
     #Bowditch = 1; Aertessen = 2; Khokhlov = 3; no reduction = 4
-WEN_form=1;
+WEN_form=1
 
 #Ship parameteres for WEN options 2 and 3. 
-Lbp = 225; # ship's length between perpendiculars (in meters)
-DWT = 8000; # ship's deadweight (in tons)
+Lbp = 225 # ship's length between perpendiculars (in meters)
+DWT = 8000 # ship's deadweight (in tons)
 
 #Additional plot flags:
 plot_nodes=1 #Yes=1 ; No=0

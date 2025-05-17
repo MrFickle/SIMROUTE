@@ -1,0 +1,19 @@
+              SIMROUTE report:     TUNIS_NICE
+=========================================================================
+
+Initial Velocity in knots = 16.1 
+WEN_form = 1 
+Departure:  Node =   5211  --  coordinates  (10.0950,37.3000)
+Departure time (day-month-year hour:min): 20-1-2023 9:00
+Arrival:     Node =  63879  --  coordinates  (7.6950,43.2000)
+Number of nodes: Nx=   249   Ny=   262   Nx*Ny= 65238   
+Geodetic Distance (in milles): 370.62
+ 
+========================================================================
+                                        Sailed hours    Sailed milles
+Route Optimized:                           28.33            392.64    
+Route Minimum Distance:                   34.15            386.28    
+Route Minimum Distance (without waves):    23.99            386.28    
+
+========================================================================
+
